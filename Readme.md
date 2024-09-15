@@ -7,3 +7,5 @@
 - Arrays
 - Slices
 - Maps
+- Range
+- Function
