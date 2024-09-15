@@ -5,3 +5,5 @@
 - Condition
 - Switch
 - Arrays
+- Slices
+- Maps
