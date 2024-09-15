@@ -1,0 +1,5 @@
+package variabledatatype
+
+func main() {
+	
+}
