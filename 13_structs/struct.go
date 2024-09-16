@@ -11,6 +11,12 @@ type Order struct{
 	amount 		float32
 	status 		string
 	createdAt 	time.Time
+	Customer
+}
+// customer struct
+type Customer struct{
+	name string
+	phone string
 }
 func newOrder(id,status string,amount float32)*Order{
 
@@ -21,6 +27,14 @@ func newOrder(id,status string,amount float32)*Order{
    }
    return &myOrder
 
+}
+
+func newCustomer(name, phone string)*Customer{
+	newCustomer:=Customer{
+		name: name,
+		phone: phone,
+	}
+	return &newCustomer
 }
 //receiver type
 func (o *Order) changeStatus(status string){
@@ -43,6 +57,11 @@ func main() {
 	// // fmt.Println(myOrder);
 	// fmt.Println(myOrder);
 	// fmt.Println(myOrder.getAmount());
-	myOder := newOrder("1","revived",20)
+	
+	myOder := newOrder("1","revived",20,)
+	myCustom := newCustomer("Nahid Farazi","01795543090")
 	fmt.Println(myOder);
+	fmt.Println(myCustom);
+	
+	
 }
